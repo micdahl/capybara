@@ -145,7 +145,7 @@ RSpec.describe Capybara::Session do # rubocop:disable RSpec/MultipleDescribes
       end
     end
 
-    describe '#send_keys' do
+    describe '#send_keys', :focus_ do
       it 'raises an UnsupportedMethodError' do
         session.visit('/form')
 

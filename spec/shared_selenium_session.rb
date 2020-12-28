@@ -222,7 +222,7 @@ RSpec.shared_examples 'Capybara::Session' do |session, mode|
       end
     end
 
-    describe '#send_keys' do
+    describe '#send_keys', :focus_ do
       it 'defaults to sending keys to the document.activeElement' do
         session.visit('/form')
 

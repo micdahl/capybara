@@ -1068,7 +1068,7 @@ Capybara::SpecHelper.spec 'node' do
     end
   end
 
-  describe '#send_keys', requires: [:send_keys] do
+  describe '#send_keys', :focus_, requires: [:send_keys] do
     it 'should send a string of keys to an element' do
       @session.visit('/form')
       @session.find(:css, '#address1_city').send_keys('Oceanside')

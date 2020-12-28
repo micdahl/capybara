@@ -19,7 +19,7 @@ RSpec.shared_examples 'Capybara::Node' do |session, _mode|
     end
   end
 
-  describe '#send_keys' do
+  describe '#send_keys', :focus_ do
     it 'should process space' do
       session.visit('/form')
       session.find(:css, '#address1_city').send_keys('ocean', [:shift, :space, 'side'])
